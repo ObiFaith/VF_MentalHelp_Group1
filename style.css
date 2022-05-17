@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto, serif;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #6FCF97;
+    padding: 1rem 2rem;
+}
+.cls{
+    clear: both;
+}
+.active{
+    color: #00A966;
+}
+.inactive{
+    color: #4d4c4c;
+}
+.call_to_action, .content_detail button.submit:hover{
+    padding: 0.3rem 1.2rem 0.1rem;
+    color: #6FCF97;
+    background-color: #fff;
+    border-radius: 0.6rem;
+    border: 0.5px solid #00A966;
+}
+.section{
+    background-color: #e3f3ea;
+    display: flex;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    min-height: 35rem;
+    width: 80%;
+    margin: 1rem 0;
+}
+.flex .content_left{
+    width: 50%;    
+    background-color: #00A966;
+}
+.flex .content_left img{
+    width: 100%;
+    max-width: 37rem;
+    padding: 4rem 0;
+    background-color: #fff;
+}
+.flex .content_right{
+    background-color: #f4f4f4;
+    width: 50%;
+    padding: 2rem 0;
+}
+.flex .content_right .text{
+    text-align: center;
+}
+.content_right .content_detail{
+    width: 80%;
+    margin: 0 auto;
+}
+.content_detail .content_center{
+    width: 60%;
+    margin: 0 auto;
+}
+.content_detail button, .content_detail .input{
+    margin-bottom: 0.7rem;
+    width: 100%;
+}
+.content_detail button a{
+    padding: 0.3rem 0.6rem;
+    width: 96%;
+    margin: 0 auto;
+}
+.content_detail button a img{
+    margin-right: 0.5rem;
+}
+.content_detail button a h4{
+    padding-top: 0.2rem;
+}
+.content_detail .facebook, .content_detail .google{
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+}
+.content_detail #facebook, .content_detail #google{
+    border: none;
+    border-radius: 0.6rem;
+}
+.content_detail #facebook{
+    background-color: #466bb7;
+}
+.content_detail #google{
+    background-color: #ff394d;
+}
+.content_detail label{
+    padding: 0 0 0.4rem 0.4rem;
+}
+.content_detail input, .content_detail button.submit{
+    border: 2px solid #009381;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.3rem;
+}
+.content_detail button.submit, .call_to_action:hover{
+    background-color: #00A966;
+    color: #fff;
+    cursor: pointer;
+    border: 0.5px solid #ddd;
+}
+.content_detail button.submit{
+    margin: 1rem auto;
+}
+.content_detail .checkbox{
+    margin: 0.3rem 0;
+}
+.content_detail span a{
+    color: #00A966;
+    text-decoration: underline;
+}
+footer{
+    background-color: #353434;    
+    padding: 3rem;
+}
+footer a{    
+    color: #00A966;
+}
