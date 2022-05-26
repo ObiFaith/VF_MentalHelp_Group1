@@ -152,18 +152,21 @@
         .hero img{
             display: none;
         }
-        .body .row, .why .row, .therapist .row, .about .row{
+        .body .row, .why .row, .therapist .row, .therapist .d-flex, .about .row{
                 flex-direction: column;            
-            }
-        .body .col, .why .col, .therapist .col, .about .col{
+        }
+        .body .col, .why .col, .therapist .col, .therapist .d-flex, .about .col{
             width: 86%;
             margin: 0 auto 2rem;           
         }
-        .body .col, .why .col, .why h2, .therapist .col, .about .col{            
+        .body .col, .why .col, .why h2, .therapist .col, .about .col, .therapist h2{            
             text-align: center; 
         }
         .body .col img{
             max-height: 400px;
+        }
+        .therapist .d-flex{
+            align-items: center;
         }
     }
     @media(max-width: 850px) {
@@ -260,17 +263,17 @@
                         <div class="flex-column">
                             <div class="col">                                
                                 <img src="./Img/folder.png" alt="Confidential Icon" style="width: 30px; margin: 0.8rem 0;">     
-                                <h3>Confidential</h3>
+                                <h3 class="fw-bold">Confidential</h3>
                                 <p>We keep all confidentail and important document safe, with clear specification regarding who have accesf to them.</p> 
                             </div>       
                             <div class="col">                                
                                 <img src="./Img/smartphone.png" alt="Flexibility Icon" style="width: 30px; margin: 0.8rem 0;">     
-                                <h3>Flexibility</h3>
+                                <h3 class="fw-bold">Flexibility</h3>
                                 <p>We keep all confidentail and important document safe, with clear specification regarding who have accesf to them.</p> 
                             </div>     
                             <div class="col">                                
                                 <img src="./Img/heart.png" alt="Love Icon" style="width: 30px; margin: 0.8rem 0;">     
-                                <h3>Comfortable to Access</h3>
+                                <h3 class="fw-bold">Comfortable to Access</h3>
                                 <p>We keep all confidentail and important document safe, with clear specification regarding who have accesf to them.</p> 
                             </div>                                     
                         </div>
@@ -289,7 +292,7 @@
         <div class="container">
             <h2>Our Therapist</h2>
             <div class="d-flex justify-content-between">
-                <div class="w-50">
+                <div class="p w-75">
                     <p>All of our Therapist have a minimum qualification of Master in all their area of Professionalism and a minimum of 4 Years Experience</p>
                 </div>
                 <div>
