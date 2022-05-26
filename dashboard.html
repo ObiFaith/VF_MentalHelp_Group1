@@ -18,7 +18,7 @@
     }
     body{
         font-family: 'Inter', sans-serif;
-        color: #3aa667;  
+        color: #0b2516;  
     }
     li{
         display: inline-block;
@@ -29,24 +29,205 @@
     }
     .myText{
         font-family: 'Itim', cursive;
+        color: #00A966;
+    }
+    .navbar-light .navbar-toggler{
+        border: 2px solid #00A966;
+    }
+    h1{
+        color: #00A966;
     }
     nav{
+        border-bottom: 2px solid #00A966;
+    }
+    .offcanvas-body a:hover, .offcanvas-body .active{
         background-color: #6FCF97;
     }
+    .navbar-light .navbar-nav .nav-link{
+        color: #0b2516;
+    }
+    .body .nav-link:focus, .nav-link:hover, .body .nav-link{
+        color: #00A966;
+    }
+    .cat{
+        border: 2px solid #00A966;
+        border-radius: 5px;
+    }
+    .cat:hover{
+        background-color: #036e43;
+        color: #fff;
+    }
+    .card-text{
+        color: #616161;
+        padding: 0.3rem 0;
+    }
+
+    @media(max-width: 1000px) {
+        .body .form{
+            display: none;
+        }
+    }
 </style>
-<body>
-    <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h5 class="text-white h4">Collapsed content</h5>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
+<body> 
+    <nav class="navbar navbar-light p-0">
+        <div class="container">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title myText" id="offcanvasNavbarLabel">MentalHelp</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class=" nav-link ps-3 active" aria-current="page" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link ps-3" href="#">Therapist</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link ps-3" href="#">Calender</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link ps-3" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link ps-3" href="#">Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link ps-3" href="#">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link ps-3" href="#">Setting</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link ps-3" href="#">Profile</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        <a class="navbar-brand myText" href="index.html"><h1>MentalHelp</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </nav>
+    <section class="body pt-3 pb-4" style="background-color: #f4f4f4;">
+        <div class="container">                
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3 class="m-0 w-75">Hello, <span class="myText">Sarah!</span> Welcome to <span class="myText">MentalHelp</span></h3>
+                <img src="./Img/testimonial-3.jpg" alt="Client" style="width: 70px; border-radius: 70px;">
+            </div>
+            <div style="background-color: #d7d7d7;" class="p-3 pb-0 d-flex flex-column">
+                <h6 class="ps-2 fw-bold">Find the best Therapist! Our specialist are always ready to Help</h6>
+                <div class="p-3" style="background-color: #fff; border-radius: 5px 30px; box-shadow: 1px 1px 4px #ece8e9;">
+                    <div class="d-flex justify-content-around">                    
+                            <div>
+                                <p class="m-0 pe-3">Therapist</p>
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle p-0 fw-bold" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        All Type
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown"  style="border-radius: 5px; box-shadow: 1px 1px 4px #ece8e9;">
+                                        <li><a class="dropdown-item" href="#">Mental Health Counselor</a></li>
+                                        <li><a class="dropdown-item" href="#">Addiction Counselor</a></li>
+                                        <li><a class="dropdown-item" href="#">Clinical Psychologist</a></li>
+                                        <li><a class="dropdown-item" href="#">Neuropsychologist</a></li>
+                                        <li><a class="dropdown-item" href="#">Psychiatric Technician</a></li>
+                                        <li><a class="dropdown-item" href="#">Mental Health Psychiatrist</a></li>
+                                        <li><a class="dropdown-item" href="#">Neuropsychologist</a></li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="px-3" style="border-left: 1px solid #0b2516;">
+                                <p class="m-0">City</p>
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle p-0 fw-bold" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                       All City
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown"  style="border-radius: 5px; box-shadow: 1px 1px 4px #ece8e9;">
+                                        <li><a class="dropdown-item" href="#">Lagos</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Abuja</a></li>
+                                        <li><a class="dropdown-item" href="#">Ibadan</a></li>
+                                        <li><a class="dropdown-item" href="#">Kano</a></li>
+                                        <li><a class="dropdown-item" href="#">Benin City</a></li>
+                                        <li><a class="dropdown-item" href="#">Enugu</a></li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="px-3" style="border-left: 1px solid #0b2516;">
+                                <p class="m-0">Gender</p>
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle p-0 fw-bold" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        All
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown"  style="border-radius: 5px; box-shadow: 1px 1px 4px #ece8e9;">
+                                        <li><a class="dropdown-item" href="#">Male</a></li>
+                                        <li><a class="dropdown-item" href="#">Female</a></li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="px-3" style="border-left: 1px solid #0b2516;">
+                                <p class="m-0">Choose a Plan</p>
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle p-0 fw-bold" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                       Pricing
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown"  style="border-radius: 5px; box-shadow: 1px 1px 4px #ece8e9;">
+                                        <li><a class="dropdown-item" href="#">Free</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Premium</a></li>
+                                        <li><a class="dropdown-item" href="#">Pro</a></li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form class="d-flex form">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content py-4">
+        <div class="container">            
+            <div class="d-flex justify-content-between">
+                <h4 class="fw-bold">Our Best For You</h4>
+                <p class="px-3 py-1 cat">View All</p>
+            </div>
+            <div class="row pt-5 justify-content-around">
+                <div class="col col-md-4">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Experiential Therapist</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed, voluptatem laudantium consectetur.</p>                      
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Caring Community</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed, voluptatem laudantium consectetur.</p>                      
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Mental Tip Blog</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed, voluptatem laudantium consectetur.</p>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
