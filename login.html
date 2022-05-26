@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentalHelp | Login</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Itim&display=swap" rel="stylesheet">
+</head>
+<style>    
+    section .col_right{
+        width: 60%;
+    }
+    section .col_left{
+        width: 40%;
+    }
+</style>
+<body>
+    <header>        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                   <a href="index.html"> <h1><span class="nav_text">MentalHelp</span></h1></a>
+                </div>
+                <div class="col">
+                    <a href="signup.html"><h3 class="nav_cat">Sign Up</h3></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col col_left">
+                    <img class="img" src="./Img/Login1.jpg" alt="MentalHelp_Motto" style="margin: auto; max-width: 33rem;">
+                </div>
+                <div class="col col_right">
+                    <div class="account">                            
+                        <div style="text-align: center;">                                
+                            <h1 class="nav_text" style="color: #838181; padding: 0.5rem 0 1rem;"><span class="active">Login</span></h1>                            
+                        </div>
+                        <form action="POST">
+                            <div class="acc_detail">
+                                <div>                                    
+                                    <div>
+                                        <label for="FirstName">Username or Email</label>
+                                    </div>
+                                    <input type="text" name="FirstName" placeholder="First name (or nickname)" required>
+                                </div>
+                                <div>                                    
+                                    <div>
+                                        <label for="Password">Password</label>
+                                    </div>
+                                    <input type="Password" name="Password" placeholder="Create Password" required>
+                                </div>
+                            </div> 
+                            <div class="button"  style="margin: 0.5rem 0 1rem;">                                
+                                <button type="submit" class="call_to_action"><h3>Login</h3></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <footer>
+        <div class="container">
+            <div class="row" style="margin-bottom: 1rem;">
+                <div class="col" style="width:70%;">                        
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="testimonial.html">Testimonial</a></li>
+                    <li><a href="blog.html">Tips and Advice</a></li>
+                    <li><a href="therapist.html">Find a Therapist</a></li>
+                    <li><a href="therapy.html">Online Therapy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
+                <div class="col" style="width:30%; align-self: center;">
+                    <a href="#"><img src="./Img/facebook1.png" alt="Our Facebook Page"></a>
+                    <a href="#"><img src="./Img/linkedin.png" alt="Our LinkedIn Page"></a>
+                    <a href="#"><img src="./Img/twitter.png" alt="Our Twitter Page"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="width:70%;">                        
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies Settings</a></li>
+                    <li><a href="#">Web Accessibility</a></li>                   
+                </div>
+                <div class="col" style="width:30%; align-self: center;">
+                    <h4>Copyright &copy; 2022,<span class="nav_text" style="font-size: 1.4rem;">MentalHelp</span></h4>                                            
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
