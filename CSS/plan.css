@@ -122,3 +122,66 @@
     justify-content: center;
     padding: 10px;
 }
+
+
+*, *::after, *::before, ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    color: #3aa667;  
+}
+li{
+    display: inline-block;
+    list-style: none;
+}
+a{      
+    text-decoration: none;
+}
+.myText{
+    font-family: 'Itim', cursive;
+}
+img{            
+    transition: all 1s;
+}
+img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+.nav_cat{
+    font-size: 1rem;
+    color: #6FCF97;
+    background-color: #fff;
+}
+.nav_cat:active, .nav_cat:hover, .call_to_action:hover{
+    background-color: #00A966;
+    border: 2px solid #00A966;
+}
+.nav_cat, .nav_cat:hover, .nav_cat:active{
+    padding: 0.3rem 0.9rem;
+    border-radius: 0.5rem;
+}
+header h1{
+    font-size: 2.4rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .nav-link:hover{
+    color: #02613b;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    text-transform: uppercase;
+}
+nav, .hero, .why, .help{
+    background-color: #6FCF97;
+}
+nav li, h1, h2, .card-title, .hero p{        
+    font-weight: bold;
+}
+.navbar-dark .navbar-nav .nav-link, .nav-link,.nav_cat:active, .nav_cat:hover, .call_to_action, .help, .text-light, .hero, .call_to_action:hover, .therapist a:hover, footer h4{        
+    color: #fff;  
+}
+a.nav-link{        
+    padding: 0;
+    color: #fff; 
+}
