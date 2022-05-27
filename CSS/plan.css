@@ -1,0 +1,124 @@
+.pricing-plan {
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 0   0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: 'intern', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    margin: 15px;
+}
+
+.pricing-plan-highlighted {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.pricing-plan_special-text {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background: #3aa667;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+
+}
+
+.pricing-plan_header {
+    padding: 25px;
+    background: #3aa667;
+    color: white;
+}
+
+.pricing-plan_title,
+.pricing-plan_summary {
+    margin: 0;
+    text-align: center;
+}
+
+.pricing-plan_title {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.pricing-plan_summary {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.pricing-plan_description {
+    padding: 25px;
+}
+
+.pricing-plan_list {
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-plan_feature {
+    list-style: none;
+    margin: 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.9em;
+    color: #616161;
+}
+
+.pricing-plan_feature:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.pricing-plan_feature::before {
+    content: "\2714";
+    color: #3aa667;
+    position: absolute;
+    left: 0;
+}
+
+.pricing-plan_actions {
+    padding: 25px;
+    border-top: 1px solid #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-plan_button{
+   display: inline-block; 
+   margin: 15px  auto;
+   padding: 8px 20px;
+   text-decoration: none;
+   color: #3aa667;
+   background: #f4f4f4;
+   border-radius: 8px;
+   border: 1px solid #55e691;
+   text-transform: uppercase;
+   letter-spacing: 0.02em;
+
+}
+
+.pricing-plan_button:hover {
+    background: #3aa667;
+    color: #ffffff;
+}
+
+.pricing-plan_cost {
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #616161;
+}
+
+.pricing-plan_text {
+    font-size: 0.9em;
+    color: #616161;
+    text-align: center;
+    max-width: 0 0 10 0;
+}
+
+.pricing-plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
